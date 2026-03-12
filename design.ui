@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Parallax UI Demo</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <!-- This label acts as the moving background layer -->
+   <widget class="QLabel" name="backgroundLabel">
+    <property name="geometry">
+     <rect>
+      <x>-50</x>
+      <y>-50</y>
+      <width>900</width>
+      <height>700</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BACKGROUND LAYER (Imagine an Image Here)</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #2c3e50; color: #34495e; font-size: 40px; font-weight: bold;</string>
+    </property>
+   </widget>
+
+   <!-- This widget holds the foreground content -->
+   <widget class="QWidget" name="foregroundContainer">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>200</y>
+      <width>400</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="titleLabel">
+       <property name="text">
+        <string>Parallax Effect</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white; font-size: 24px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="actionButton">
+       <property name="text">
+        <string>Click Me</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">padding: 10px; font-size: 14px;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
